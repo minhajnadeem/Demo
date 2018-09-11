@@ -41,4 +41,11 @@ public class Utils {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
     }
+
+    /*
+        check for login
+     */
+    public static boolean isLogin(Prefs prefs){
+        return prefs.getBool(Constants.PREF_IS_LOGIN,false);
+    }
 }
