@@ -12,4 +12,11 @@
 
     <style name="AppTheme" parent="BaseAppTheme"/>
 
+    <!--app title-->
+    <style name="StyleTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimenTitleSize</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

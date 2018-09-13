@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Demo</string>
+
+    <!--login screen-->
     <string name="stringTitleLogin">LOGIN</string>
+    <string name="stringHintLoginUsernameInactive">Enter your username</string>
+    <string name="stringHintLoginUsernameActive">Username</string>
+    <string name="stringHintLoginPasswordInactive">Enter your password</string>
+    <string name="stringHintLoginPasswordActive">Password</string>
+    <string name="stringErrorUsername">Please enter username</string>
+    <string name="stringErrorPassword">Please enter password</string>
+    <string name="stringErrorLogin">wrong username or password. Please try again!</string>
 </resources>

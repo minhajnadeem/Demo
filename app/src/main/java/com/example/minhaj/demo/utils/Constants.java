@@ -13,4 +13,5 @@ public class Constants {
 
     //prefs
     public static final String PREF_IS_LOGIN = "is_login";
+    public static final String PREF_IS_ADMIN = "is_admin";
 }
