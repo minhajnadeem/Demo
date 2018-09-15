@@ -36,4 +36,9 @@ public class Prefs {
     public boolean getBool(String key,boolean defaultValue){
         return sharedPreferences.getBoolean(key,defaultValue);
     }
+
+    public void clear(){
+        editor.clear();
+        editor.apply();
+    }
 }

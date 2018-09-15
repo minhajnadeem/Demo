@@ -2,7 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/actionBarSize"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/dimenAppbarElevation"
+    android:paddingLeft="@dimen/dimensDefaultMargin"
+    android:paddingRight="@dimen/dimensDefaultMargin">
+
+    <ImageView
+        android:id="@+id/ivAppbarLeftIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_logout"
+        android:layout_centerVertical="true"/>
 
     <TextView
         android:id="@+id/title"

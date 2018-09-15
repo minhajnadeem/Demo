@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 
+import com.example.minhaj.demo.LoginActivity;
 import com.example.minhaj.demo.MainActivity;
 
 /**
@@ -29,14 +30,14 @@ public class Utils {
     /*
         check if activity running
      */
-    public static boolean isActivityRunning(Activity activity){
+    public static boolean isActivityRunning(Activity activity) {
         return activity.getWindow().getDecorView().getRootView().isShown();
     }
 
     /*
         start main activity
      */
-    public static void startMainActivity(Activity activity){
+    public static void startMainActivity(Activity activity) {
         Intent intent = new Intent(activity, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
@@ -45,7 +46,20 @@ public class Utils {
     /*
         check for login
      */
-    public static boolean isLogin(Prefs prefs){
-        return prefs.getBool(Constants.PREF_IS_LOGIN,false);
+    public static boolean isLogin(Prefs prefs) {
+        return prefs.getBool(Constants.PREF_IS_LOGIN, false);
+    }
+
+    public static void logout(Activity activity,Prefs prefs) {
+        prefs.clear();
+        startNewLoginActivity(activity);
+    }
+    /*
+        start new login activity
+     */
+    public static void startNewLoginActivity(Activity activity) {
+        Intent intent = new Intent(activity, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        activity.startActivity(intent);
     }
 }

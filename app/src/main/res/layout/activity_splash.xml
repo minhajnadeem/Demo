@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".SplashActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DEMO"
-        android:textSize="22sp"
-        android:layout_centerInParent="true"/>
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="BAHAWAL SHOES"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimenSplashTextSize"
+        android:gravity="center"/>
 
 </RelativeLayout>

@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <include layout="@layout/layout_appbar"
-        android:id="@+id/appbar"/>
+    tools:context=".ProductDetailActivity"
+    android:background="@color/colorBlack">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -15,12 +13,8 @@
         android:fillViewport="true">
 
         <RelativeLayout
-            android:id="@+id/layoutContainer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            android:layout_marginLeft="@dimen/dimensDefaultMargin"
-            android:layout_marginRight="@dimen/dimensDefaultMargin">
+            android:layout_height="match_parent">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerView"
@@ -31,6 +25,12 @@
 
         </RelativeLayout>
 
+
     </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#80000000" />
 
 </RelativeLayout>

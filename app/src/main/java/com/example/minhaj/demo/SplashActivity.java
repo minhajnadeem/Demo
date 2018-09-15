@@ -6,15 +6,19 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 import com.example.minhaj.demo.utils.Prefs;
 import com.example.minhaj.demo.utils.Utils;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private final int TIME_OUT = 2000; //2sec
+    private final int TIME_OUT = 2500; //2sec
     private Activity context;
     private Prefs prefs;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,9 @@ public class SplashActivity extends AppCompatActivity {
 
         context = this;
         prefs = new Prefs(this);
+
+        textView = findViewById(R.id.textView);
+
         //start main activity after delay
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -39,5 +46,8 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
         },TIME_OUT);
+
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.anim_splash);
+        textView.startAnimation(animation);
     }
 }

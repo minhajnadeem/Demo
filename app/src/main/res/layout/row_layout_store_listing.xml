@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimenHorizontalMarginMedium">
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="@dimen/dimenItemWidth"
+        android:layout_height="@dimen/dimenItemHeight"
+        android:layout_marginRight="@dimen/dimenHorizontalMarginSmall"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/ivItem">
+
+        <TextView
+            android:id="@+id/tvUnitPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="300 RS qty 1"
+            android:textSize="@dimen/dimenStoreListingTextSize"
+            android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
+
+        <TextView
+            android:id="@+id/tvHalfDozenPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1700 RS qty 6"
+            android:textSize="@dimen/dimenStoreListingTextSize"
+            android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
+
+        <TextView
+            android:id="@+id/tvDozenPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3400 RS qty 12"
+            android:textSize="@dimen/dimenStoreListingTextSize"/>
+
+    </LinearLayout>
+</RelativeLayout>

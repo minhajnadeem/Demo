@@ -14,4 +14,7 @@ public class Constants {
     //prefs
     public static final String PREF_IS_LOGIN = "is_login";
     public static final String PREF_IS_ADMIN = "is_admin";
+
+    //extras
+    public static final String EXTRA_STORE_LISTING_MODEL = "store_listing_model";
 }

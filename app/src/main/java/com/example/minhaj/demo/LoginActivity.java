@@ -97,11 +97,13 @@ public class LoginActivity extends AppCompatActivity {
             if (etUsername.getText().toString().trim().equals(Constants.ADMIN_USER_NAME) &&
                     etPassword.getText().toString().trim().equals(Constants.ADMIN_PASSWORD)){
                 prefs.setBool(Constants.PREF_IS_ADMIN,true);
+                prefs.setBool(Constants.PREF_IS_LOGIN,true);
                 Utils.startMainActivity(this);
 
             }else if (etUsername.getText().toString().trim().equals(Constants.CLIENT_USER_NAME) &&
                     etPassword.getText().toString().trim().equals(Constants.CLIENT_USER_NAME)){
                 prefs.setBool(Constants.PREF_IS_ADMIN,false);
+                prefs.setBool(Constants.PREF_IS_LOGIN,true);
                 Utils.startMainActivity(this);
             }else {
                 Toast.makeText(this, R.string.stringErrorLogin, Toast.LENGTH_LONG).show();

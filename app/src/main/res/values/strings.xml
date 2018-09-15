@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Demo</string>
+    <string name="app_name">Bahawal Shoes</string>
 
     <!--login screen-->
     <string name="stringTitleLogin">LOGIN</string>
@@ -10,4 +10,10 @@
     <string name="stringErrorUsername">Please enter username</string>
     <string name="stringErrorPassword">Please enter password</string>
     <string name="stringErrorLogin">wrong username or password. Please try again!</string>
+
+    <!--Home screen-->
+    <string name="stringTitleHome">HOME</string>
+    <string name="stringUnitPrice">%d Rs qty 1</string>
+    <string name="stringHalfDozenPrice">%d Rs qty 6</string>
+    <string name="stringDozenPrice">%d Rs qty 12</string>
 </resources>

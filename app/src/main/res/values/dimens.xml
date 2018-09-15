@@ -3,4 +3,17 @@
 
     <dimen name="dimensDefaultMargin">16dp</dimen>
     <dimen name="dimenTitleSize">18sp</dimen>
+    <dimen name="dimenAppbarElevation">4dp</dimen>
+    <dimen name="dimenHorizontalMarginSmall">4dp</dimen>
+    <dimen name="dimenHorizontalMarginMedium">8dp</dimen>
+    <dimen name="dimenHorizontalMarginLarge">12dp</dimen>
+
+    <!--home-->
+    <dimen name="dimenStoreListingTextSize">14sp</dimen>
+    <dimen name="dimenItemWidth">70dp</dimen>
+    <dimen name="dimenItemHeight">70dp</dimen>
+
+    <!--splash-->
+    <dimen name="dimenSplashTextSize">24sp</dimen>
+
 </resources>
