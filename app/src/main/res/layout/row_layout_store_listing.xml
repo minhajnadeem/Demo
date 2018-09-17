@@ -10,37 +10,92 @@
         android:layout_height="@dimen/dimenItemHeight"
         android:layout_marginRight="@dimen/dimenHorizontalMarginSmall"
         android:src="@drawable/img_1"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
 
     <LinearLayout
         android:id="@+id/layoutContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_toRightOf="@id/ivItem">
+        android:layout_toLeftOf="@id/ivItem"
+        android:layout_marginRight="@dimen/dimenHorizontalMarginSmall">
 
-        <TextView
-            android:id="@+id/tvUnitPrice"
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="300 RS qty 1"
-            android:textSize="@dimen/dimenStoreListingTextSize"
-            android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
+            >
 
-        <TextView
-            android:id="@+id/tvHalfDozenPrice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1700 RS qty 6"
-            android:textSize="@dimen/dimenStoreListingTextSize"
-            android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
+            <TextView
+                android:id="@+id/tvUnitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300 RS"
+                android:textSize="@dimen/dimenStoreListingTextSize"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
 
-        <TextView
-            android:id="@+id/tvDozenPrice"
-            android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty1"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3400 RS qty 12"
-            android:textSize="@dimen/dimenStoreListingTextSize"/>
+            >
+            <TextView
+                android:id="@+id/tvHalfDozenPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1700 RS"
+                android:textSize="@dimen/dimenStoreListingTextSize"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="@dimen/dimenHorizontalMarginSmall"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty6"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDozenPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3400 RS"
+                android:textSize="@dimen/dimenStoreListingTextSize"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty12"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
 
     </LinearLayout>
+
+    <!--seprator-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ivItem"
+        android:background="@color/colorLightGrey"/>
 </RelativeLayout>

@@ -12,8 +12,8 @@
     <string name="stringErrorLogin">wrong username or password. Please try again!</string>
 
     <!--Home screen-->
-    <string name="stringTitleHome">HOME</string>
-    <string name="stringUnitPrice">%d Rs qty 1</string>
-    <string name="stringHalfDozenPrice">%d Rs qty 6</string>
-    <string name="stringDozenPrice">%d Rs qty 12</string>
+    <string name="stringTitleHome">BAHAWAL SHOES</string>
+    <string name="stringUnitPrice">%d Rs</string>
+    <string name="stringHalfDozenPrice">%d Rs</string>
+    <string name="stringDozenPrice">%d Rs</string>
 </resources>

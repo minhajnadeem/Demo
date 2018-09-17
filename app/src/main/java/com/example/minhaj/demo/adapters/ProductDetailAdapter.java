@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.minhaj.demo.R;
+import com.example.minhaj.demo.utils.GlideApp;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,10 @@ public class ProductDetailAdapter extends RecyclerView.Adapter<ProductDetailAdap
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-        myViewHolder.imageView.setImageResource(arrayListDetailImages.get(i));
+        GlideApp.with(context)
+                .load(context.getResources().getDrawable(arrayListDetailImages.get(i)))
+                .override(1000,666)
+                .into(myViewHolder.imageView);
     }
 
     @Override

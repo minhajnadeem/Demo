@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.minhaj.demo.R;
 import com.example.minhaj.demo.interfaces.StoreListingClickInterface;
 import com.example.minhaj.demo.models.StoreListingModel;
+import com.example.minhaj.demo.utils.GlideApp;
 
 import java.util.ArrayList;
 
@@ -41,10 +42,13 @@ public class StoreListingAdapter extends RecyclerView.Adapter<StoreListingAdapte
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         StoreListingModel model = storeListingModelArrayList.get(i);
 
-        myViewHolder.ivItem.setImageResource(model.getResDrawableImg());
+        GlideApp.with(context)
+                .load(context.getResources().getDrawable(model.getResDrawableImg()))
+                .into(myViewHolder.ivItem);
+
         myViewHolder.tvUnitPrice.setText(String.format(context.getString(R.string.stringUnitPrice),model.getUnitPrice()));
-        myViewHolder.tvHalfDozenPrice.setText(String.format(context.getString(R.string.stringHalfDozenPrice),model.getHalfDozenPrice()));
-        myViewHolder.tvDozenPrice.setText(String.format(context.getString(R.string.stringDozenPrice),model.getDozenPrice()));
+        myViewHolder.tvHalfDozenPrice.setText(String.format(context.getString(R.string.stringHalfDozenPrice),model.getDozenPrice()));
+        myViewHolder.tvDozenPrice.setText(String.format(context.getString(R.string.stringDozenPrice),model.getHalfDozenPrice()));
     }
 
     @Override

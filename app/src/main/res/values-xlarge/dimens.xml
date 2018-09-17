@@ -5,9 +5,9 @@
     <dimen name="dimenTitleSize">24sp</dimen>
 
     <!--home-->
-    <dimen name="dimenStoreListingTextSize">18sp</dimen>
-    <dimen name="dimenItemWidth">130dp</dimen>
-    <dimen name="dimenItemHeight">130dp</dimen>
+    <dimen name="dimenStoreListingTextSize">20sp</dimen>
+    <dimen name="dimenItemWidth">160dp</dimen>
+    <dimen name="dimenItemHeight">160dp</dimen>
 
     <!--splash-->
     <dimen name="dimenSplashTextSize">58sp</dimen>

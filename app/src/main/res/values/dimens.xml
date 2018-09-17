@@ -9,9 +9,9 @@
     <dimen name="dimenHorizontalMarginLarge">12dp</dimen>
 
     <!--home-->
-    <dimen name="dimenStoreListingTextSize">14sp</dimen>
-    <dimen name="dimenItemWidth">70dp</dimen>
-    <dimen name="dimenItemHeight">70dp</dimen>
+    <dimen name="dimenStoreListingTextSize">16sp</dimen>
+    <dimen name="dimenItemWidth">100dp</dimen>
+    <dimen name="dimenItemHeight">100dp</dimen>
 
     <!--splash-->
     <dimen name="dimenSplashTextSize">24sp</dimen>

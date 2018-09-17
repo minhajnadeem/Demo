@@ -1,7 +1,10 @@
 package com.example.minhaj.demo.utils;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Point;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import com.example.minhaj.demo.LoginActivity;
@@ -61,5 +64,23 @@ public class Utils {
         Intent intent = new Intent(activity, LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
+    }
+
+    /*
+        get device height in pixel
+     */
+    public static int getDeviceHeight(Activity context){
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        context.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        return displayMetrics.heightPixels;
+    }
+
+    /*
+        get device width in pixel
+     */
+    public static int getDeviceWidth(Activity context){
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        context.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        return displayMetrics.widthPixels;
     }
 }
