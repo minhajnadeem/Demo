@@ -37,7 +37,7 @@ public class ProductDetailAdapter extends RecyclerView.Adapter<ProductDetailAdap
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         GlideApp.with(context)
                 .load(context.getResources().getDrawable(arrayListDetailImages.get(i)))
-                .override(1000,666)
+                .override(800,532)
                 .into(myViewHolder.imageView);
     }
 
